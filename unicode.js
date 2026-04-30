@@ -83,18 +83,44 @@ Assign the result to a variable named swappedString.
 
 */
 
+//Practice Problem #1
+//Excercise 1:
+let inputString = "Hi";
+let sumCodePoints = inputString.charCodeAt(0) + inputString.charCodeAt(1);
+console.log("sumCodePoints:", sumCodePoints);
+
+//Excercise 2:
+let codePoint1 = 65;
+let codePoint2 = 66;
+let combinedString = String.fromCharCode(codePoint1) + String.fromCharCode(codePoint2);
+console.log("combinedString:", combinedString); 
+
+
+//Excercise 3:
+let inputString = "Cat";
+let index1 = 0;
+let index2 = 2;
+let codePoinDifference = Math.abs(inputString.charCodeAt(index1) - inputString.charCodeAt(index2));
+console.log("codePoinDifference:", codePoinDifference);
+
+
 //Starter Code
 // Task 1
 let inputString1 = "Code";
-let firstCodePoint; // Your code here
-let thirdCodePoint; // Your code here
+let firstCodePoint = inputString1.charCodeAt(0); 
+let thirdCodePoint = inputString1.charCodeAt(2); 
+console.log(firstCodePoint);
+console.log(thirdCodePoint);
+
 
 // Task 2
-let wordFromCodePoints; // Your code here
+let wordFromCodePoints = String.fromCharCode(74, 97, 118, 97, 83, 99, 114, 105, 112, 116);
+console.log(wordFromCodePoints);
 
 // Task 3
 let inputString2 = "Launch";
-let swappedString; // Your code here
+let swappedString = inputString2.charAt(inputString2.length - 1) + inputString2.slice(1, -1) + inputString2.charAt(0);
+console.log(swappedString);
 
 // Log all results
 console.log({
